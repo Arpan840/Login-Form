@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form  class="form">
+      <h2 class="welcome">Welcome back! 👋</h2>
+      <div><h1>Sign up to your account</h1></div>
+      <div class="userInput">
+        <label for="name">Your name</label>
+        <input type="text" class="name" />
+        <label for="email">Your email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="email"
+          autocomplete="email"
+        />
+        <p class="error" id="passSize">
+            * Password must be at least 8 characters long.
+          </p>
+        <label for="password">Password</label>
+        <input type="password" class="password" autocomplete="new-password" />
+        <p class="error">
+          * Passwords do not match. Please make sure your passwords match exactly.
+        </p>
+        <label for="confPassword">Confirm Password</label>
+        <input
+          type="password"
+          class="confPassword"
+          autocomplete="current-password"
+        />
+        <button type="submit" class="register">CONTINUE</button>
+        <div class="worning">
+          <h2>Error: All fields are mandatory!</h2>
+        </div>
+        <div class="signup">Don’t have an account ?<span> Sign up</span></div>
+      </div>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
