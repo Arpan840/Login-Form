@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form action="" class="form">
+    <form  class="form">
       <h2 class="welcome">Welcome back! 👋</h2>
       <div><h1>Sign up to your account</h1></div>
       <div class="userInput">
@@ -21,6 +21,9 @@
           class="email"
           autocomplete="email"
         />
+        <p class="error" id="passSize">
+            * Password must be at least 8 characters long.
+          </p>
         <label for="password">Password</label>
         <input type="password" class="password" autocomplete="new-password" />
         <p class="error">

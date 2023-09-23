@@ -2,6 +2,7 @@ let logout = document.querySelector("#logout");
 const userDataDiv = document.querySelector(".userData");
 const userDataJSON = localStorage.getItem("userData");
 const userData = JSON.parse(userDataJSON);
+const currentLocation = window.location.href;
 
 const fullNameParagraph = document.createElement("p");
 fullNameParagraph.textContent = `Full Name : ${userData.name}`;
@@ -12,7 +13,7 @@ emailParagraph.textContent = `Email : ${userData.userEmail}`;
 emailParagraph.classList.add("personDetails");
 
 const tokenParagraph = document.createElement("p");
-tokenParagraph.textContent = "Token : Your Token";
+tokenParagraph.textContent = `Token : ${userData.accessToken}`;
 tokenParagraph.classList.add("personDetails");
 
 const passwordParagraph = document.createElement("p");

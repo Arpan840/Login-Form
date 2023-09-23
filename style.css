@@ -9,6 +9,10 @@ body {
   height: 100vh;
   width: 100vw;
   flex-direction: column;
+  
+  text-align: center;
+  overflow:hidden;
+  flex-wrap: wrap;
 }
 
 .form {
@@ -121,6 +125,12 @@ span {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 20px;
+  
+  
 }
 .proBody {
   width: 100px;
@@ -146,5 +156,8 @@ span {
     display: flex;
     flex-direction: column;
     width: 75vw;
+  }
+  .personDetails {
+    font-size: 13px;
   }
 }
