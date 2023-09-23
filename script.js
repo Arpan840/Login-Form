@@ -9,7 +9,7 @@ let passWordSize = document.querySelector("#passSize");
 const currentPage = window.location.href;
 
 const signupPageURL = "/";
-const profilePageURL = "/index.html";
+const profilePageURL = "/mypage.html";
 
 function generateRandom16DigitNumber() {
   const min = 1000000000000000;
@@ -59,7 +59,7 @@ function getValues(e) {
     userConfPassword
   ) {
     localStorage.setItem("userData", JSON.stringify(userData));
-    window.location.href = "/index.html";
+    window.location.href = "/mypage.html";
   } else {
     errorMessage.style.display = "block";
   }
